@@ -1,3 +1,12 @@
+/*
+File: script.js
+Author: Tiliczki Tibor
+Copyright: 2023, Tiliczki Tibor
+Group: Szoft I/1/E
+Date: 2023-03-27
+Github: https://github.com/tilitihub/Ships.git
+Licenc: GNU GPL
+*/
 const doc = {
     tbody: null
 };
