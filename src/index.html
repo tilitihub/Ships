@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ships</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Ships</h1>
-      <p>Nevek, méretek, árak és egyebek.</p>
-    </header>
-    <main>
-      <table id="ship-table">
-        <thead>
-          <tr>
-            <th>Név</th>
-            <th>Méret (cm)</th>
-            <th>Ár</th>
-            <th>Személyek száma</th>
-            <th>Utánfutó</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <div id="quote-container">
-        <blockquote>
-          <p id="quote"></p>
-          <footer id="quote-author"></footer>
-        </blockquote>
-      </div>
-    </main>
-    <footer>
-      <p>Készítette: [név], [csoport], [dátum]</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="icon" type="image/x-icon" href="../img/Favicso.ico">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ships</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Név</th>
+                    <th>Méret (cm)</th>
+                    <th>Ár (HUF)</th>
+                    <th>Személyek száma</th>
+                    <th>Utánfutó</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <div class="about">
+        kopirájtkriptobájt © Tiliczki Tibor, 2023-03-27, Szoft I/1/E
+    </div>
+    <script src="../src/script.js"></script>
+</body>
+
 </html>

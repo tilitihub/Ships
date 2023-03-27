@@ -1,18 +1,41 @@
-const quoteUrl = "https://api.quotable.io/random";
-const apiUrl = "http://localhost:8080/ships";
-
-async function getQuote() {
-  const response = await fetch(quoteUrl);
-  const data = await response.json();
-  return data;
+const doc = {
+    tbody: null
+};
+const state = {
+    ships: []
+}
+window.addEventListener('load', () => {
+    init();
+});
+function init() {
+    doc.tbody = document.querySelector('#tbody');
+    getShips();
 }
 
-async function getShips() {
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  return data.ships;
+function getShips() {
+    let host = 'http://localhost:8000/';
+    let endpoint = 'ships';
+    let url = host + endpoint;
+    fetch(url)
+        .then((database) => database.json())
+        .then((result) => {
+            state.ships = result;
+            render();
+        });
 }
-
-function createShipRow(ship) {
-  const row = document.createElement("tr");
-  row.innerHTML
+function render() {
+    let rows = '';
+    state.ships.forEach((ship) => {
+        console.log(ship.name);
+        rows += `
+            <tr>
+            <td>${ship.name}</td>
+            <td>${ship.length}</td>
+            <td>${ship.price}</td>
+            <td>${ship.person}</td>
+            <td>${ship.trailer}</td>
+            </tr>
+        `;
+    });
+    doc.tbody.innerHTML = rows;
+}
