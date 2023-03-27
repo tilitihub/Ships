@@ -27,3 +27,9 @@ th, td {
     color: #041d01;
     text-align: right;
 }
+#quote {
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+    margin-top: 80px;
+}

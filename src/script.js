@@ -39,3 +39,5 @@ function render() {
     });
     doc.tbody.innerHTML = rows;
 }
+const quote = document.querySelector('#quote');
+quote.textContent = '"Talán az emberek azért szeretnek a tengerre utazni, mert az emlékezteti őket arra, hogy az élet végtelen lehetőségeket rejt magában." - Columbus Kristóf';
