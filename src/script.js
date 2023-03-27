@@ -49,4 +49,4 @@ function render() {
     doc.tbody.innerHTML = rows;
 }
 const quote = document.querySelector('#quote');
-quote.textContent = '"Talán az emberek azért szeretnek a tengerre utazni, mert az emlékezteti őket arra, hogy az élet végtelen lehetőségeket rejt magában." - Columbus Kristóf';
+quote.textContent = '"Az életünk olyan, mint a hajózás a folyón; nem mindig tudjuk, hogy hová tartunk, vagy merre vezet az utunk, de a fontos az, hogy élvezzük az utazást." - Joseph Conrad';
