@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -24,7 +24,7 @@ th, td {
 .about {
     margin-top: 20px;
     font-size: 12px;
-    color: #041d01;
+    color: #ee0d05;
     text-align: right;
 }
 #quote {
